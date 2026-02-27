@@ -88,7 +88,7 @@ section {
 
 .section-text {
   color: white;
-  
+
   font-weight: 100;
   font-size: 60px;
   width: 200px;
@@ -96,10 +96,10 @@ section {
   padding-bottom: 50px;
 }
 
-.gallery-section {
+.about-section {
   background-color: #171717;
 }
 
-.about-section {
+.footer-section {
   background-color: #171717;
 }

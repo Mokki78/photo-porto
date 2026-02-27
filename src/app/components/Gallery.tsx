@@ -25,7 +25,7 @@ const images = [
 export default function Gallery() {
   return (
     <section className="px-6 md:px-20 py-24 gallery-section">
-      <h1 className="section-text">Gallery</h1>
+      <h1 className="text-4xl mb-6 tracking-wide color-white">Gallery</h1>
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-2">
         {images.map((src, index) => (
           <motion.div
