@@ -1,14 +1,22 @@
-import Header from "./components/Header";
-import About from "./components/About";
-import Gallery from "./components/Gallery";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Gallery from "./components/Gallery";
+import About from "./components/About";
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <Gallery />
-      <About />
+      <Navbar />
+      <section id="Home">
+        <Hero />
+      </section>
+      <section id="Gallery">
+        <Gallery />
+      </section>
+      <section id="About">
+        <About />
+      </section>
       <Footer />
     </>
   );

@@ -24,3 +24,27 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background: black;
+  z-index: 9999;
+  color: white;
+  cursor: pointer;
+}
+
+section {
+  min-height: 100vh;
+  padding-top: 100px;
+  scroll-margin-top: 80px;
+}

@@ -1,3 +1,7 @@
 export default function Gallery() {
-    return <h1>This is my photography</h1>
+    return (
+        <div className="Gallery">
+            Gallery content
+        </div>
+    )
 }
