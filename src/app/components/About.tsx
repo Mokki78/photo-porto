@@ -36,10 +36,14 @@ export default function About() {
           <h2 className="text-4xl mb-6 tracking-wide">About</h2>
 
           <p className="text-lg leading-relaxed text-neutral-600">
-            I am a photographer inspired by light, people and the magic in mother nature.
-            I love capturing the small moments and the big details.
-             
-            I started the journey becoming a photographer kind of by accident. And did not start photographing until a started 
+            With over 16 years of experience in photography, I specialize in
+            families and portraits, with a love for natural light and authentic
+            outdoor moments. My style blends relaxed, genuine expression with a
+            subtle fashion-inspired edge. I’m also educated in digital
+            marketing, UI design, and front-end development, which strengthens
+            my visual storytelling and creative perspective. Inspired by people,
+            children, colors, travel, and music, I aim to create photographs
+            that feel natural, timeless, and full of life.
           </p>
         </motion.div>
       </div>
