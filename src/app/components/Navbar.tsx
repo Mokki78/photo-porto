@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Some from "./Some";
 
 const sections = ["Home", "About", "Gallery"];
 
@@ -57,7 +58,9 @@ export default function Navbar() {
               />
             )}
           </div>
+        
         ))}
+          <Some />
       </nav>
     </>
   );
