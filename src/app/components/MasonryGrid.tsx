@@ -32,48 +32,50 @@ const container = {
   },
 };
 
+const ease: [number, number, number, number] = [0.2, 0.1, 0.25, 1];
+
 const item = {
-  hidden: { opacity: 0, y: 40 },
+  hidden: { opacity: 0, y: 20 },
   show: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.6,
-      ease: "easeOut",
+      duration: 0.4,
+      ease,
     },
   },
 };
 
 const MasonryGrid = () => {
   return (
-      <>
-          <div>
-    <h1 className="text-6xl text-white flex items-center justify-center ">PORTFOLIO</h1>
-  </div>
-   
-    <motion.div
-    
-      variants={container}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true }}
-      className="columns-1  sm:columns-2 lg:columns-3 py-10 md:py-20 gap-4 sm:mx-10 md:mx-40 lg:mx-80"
-    >
+    <>
+      <div>
+        <h1 className="text-6xl text-white flex items-center justify-center ">
+          PORTFOLIO
+        </h1>
+      </div>
 
-      {images.map((src, index) => (
-        <motion.div
-          key={index}
-          variants={item}
-          className="mb-4 break-inside-avoid"
-        >
-          <img
-            src={src}
-            className="w-full object-cover rounded-md transition-transform duration-500 hover:scale-[1.03]"
-            alt=""
-          />
-        </motion.div>
-      ))}
-    </motion.div>
+      <motion.div
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="columns-1  sm:columns-2 lg:columns-3 py-10 md:py-20 gap-4 sm:mx-10 md:mx-40 lg:mx-80"
+      >
+        {images.map((src, index) => (
+          <motion.div
+            key={index}
+            variants={item}
+            className="mb-4 break-inside-avoid"
+          >
+            <img
+              src={src}
+              className="w-full object-cover rounded-md transition-transform duration-500 hover:scale-[1.03]"
+              alt=""
+            />
+          </motion.div>
+        ))}
+      </motion.div>
     </>
   );
 };
