@@ -1,13 +1,26 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Ms_Madi } from "next/font/google";
+import { Ms_Madi , Montserrat_Alternates,Montserrat } from "next/font/google";
 
 const madi = Ms_Madi({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-madi",
 });
+
+const montAlt = Montserrat_Alternates ({
+  subsets: ["latin"],
+  weight: ["100", "200", "400"],
+  variable: "--font-mont-alt",
+})
+
+const mont = Montserrat ({
+  subsets: ["latin"],
+  weight: ["100"],
+  variable: "--font-mont",
+})
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,8 +43,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={madi.variable}>{children}</body>
+    <html lang="en" className={`${madi.variable} ${montAlt.variable}`} >
+      <body>{children}</body>
     </html>
   );
 }

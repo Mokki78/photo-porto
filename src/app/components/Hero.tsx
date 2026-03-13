@@ -26,7 +26,7 @@ export default function Home() {
 
       {/* Content */}
       <div className="relative z-10 flex h-full items-center justify-center">
-        <h1 className="porto-text">Portfolie</h1>
+        <h1 className="porto-text">Portfolio</h1>
         <h1 className="main-text">Fotograf Monika Sæle</h1>
       </div>
     </section>

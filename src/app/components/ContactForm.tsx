@@ -18,7 +18,7 @@ export default function ContactForm() {
         }
         className="max-w-lg mx-auto bg-white p-8  shadow-xl space-y-6"
       >
-        <h2 className="text-3xl font-bold text-gray-800">Contact Me</h2>
+        <h2 className="text-3xl font-bold text-gray-800">CONTACT</h2>
 
         <input
           name="name"

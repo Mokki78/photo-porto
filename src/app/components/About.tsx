@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section className="min-h-screen flex items-center px-6 md:px-20 py-24">
+    <section className="min-h-screen flex items-center px-6 md:px-20 py-24 bg-black color-white">
       <div className="grid md:grid-cols-2 gap-16 items-center">
         {/* Portrait */}
         <motion.div
@@ -33,7 +33,7 @@ export default function About() {
           viewport={{ once: true }}
           className="max-w-xl"
         >
-          <h2 className="text-4xl mb-6 tracking-wide">About</h2>
+          <h2 className="text-4xl mb-6 tracking-wide">ABOUT</h2>
 
           <p className="text-lg leading-relaxed text-neutral-600">
             With over 16 years of experience in photography, I specialize in
@@ -45,6 +45,12 @@ export default function About() {
             children, colors, travel, and music, I aim to create photographs
             that feel natural, timeless, and full of life.
           </p>
+          <div className="footer-text">
+            <h3>Contact information:</h3>
+        
+        <p>Phone: +47 90 75 75 19</p>
+        <p>Email: post@fotograf-ms.com</p>
+      </div>
         </motion.div>
       </div>
     </section>
