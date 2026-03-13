@@ -1,5 +1,8 @@
 "use client";
 
+import Image from "next/image";
+import { Variants } from "framer-motion";
+
 import { motion } from "framer-motion";
 
 const images = [
@@ -24,27 +27,33 @@ const images = [
 ];
 
 const container = {
-  hidden: {},
-  show: {
-    transition: {
-      staggerChildren: 0.08,
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.15,
+      },
     },
-  },
-};
-
-const ease: [number, number, number, number] = [0.2, 0.1, 0.25, 1];
-
-const item = {
-  hidden: { opacity: 0, y: 20 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.4,
-      ease,
+  };
+  
+  const item: Variants = {
+    hidden: {
+      opacity: 0,
+      y: 40,
+     
     },
-  },
-};
+    show: {
+      opacity: 1,
+      y: 0,
+      
+      transition: {
+        type: "spring",
+        stiffness: 90,
+        damping: 18,
+        mass: 0.6,
+      },
+    },
+  };
 
 const MasonryGrid = () => {
   return (
