@@ -1,8 +1,8 @@
 export default function Some() {
   
  return (
-    <div className="some-container">
-    <div className="some">
+    <div className="some-container flex items-end gap-3">
+    <div className="some object-top-right">
       <a
         href="https://www.facebook.com/fotografmonikasaele/"
         target="_blank"

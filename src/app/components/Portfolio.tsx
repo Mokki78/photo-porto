@@ -5,9 +5,8 @@ import MasonryGrid from "./MasonryGrid";
 
 
 
-export default function Gallery() {
+export default function Portfolio() {
   return (
     <MasonryGrid />
- 
   );
 }
