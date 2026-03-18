@@ -34,19 +34,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  background: black;
-  z-index: 9999;
-  color: white;
-  cursor: pointer;
-}
+
 
 section {
   padding-top: 100px;
@@ -110,7 +98,7 @@ section {
 }
 
 .footer-text {
-  color:  #171717;
+  color: #171717;
   margin-top: 20px;
 }
 
@@ -119,10 +107,5 @@ section {
 }
 
 .some-container {
- 
   width: 100px;
-}
-
-.some {
- 
 }
