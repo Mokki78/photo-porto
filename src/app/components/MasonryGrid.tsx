@@ -1,9 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { Variants } from "framer-motion";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 const images = [
   `/square_2.jpg`,
@@ -26,34 +25,31 @@ const images = [
   `/long_11.jpg`,
 ];
 
-const container = {
-    hidden: {},
-    show: {
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.15,
-      },
-    },
-  };
-  
-  const item: Variants = {
-    hidden: {
-      opacity: 0,
-      y: 40,
-     
-    },
-    show: {
-      opacity: 1,
-      y: 0,
+const container: Variants = {
+  hidden: {},
+  show: {
+    transition: {
       
-      transition: {
-        type: "spring",
-        stiffness: 90,
-        damping: 18,
-        mass: 0.6,
-      },
+      duration: 0.35
     },
-  };
+  },
+};
+
+const item: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 40,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
 
 const MasonryGrid = () => {
   return (
@@ -65,9 +61,10 @@ const MasonryGrid = () => {
       </div>
 
       <motion.div
+        layout
         variants={container}
         initial="hidden"
-        whileInView="show"
+        animate="show"
         viewport={{ once: true }}
         className="columns-1  sm:columns-2 lg:columns-3 py-10 md:py-20 gap-4 sm:mx-10 md:mx-40 lg:mx-80"
       >
@@ -77,10 +74,12 @@ const MasonryGrid = () => {
             variants={item}
             className="mb-4 break-inside-avoid"
           >
-            <img
+            <Image
               src={src}
-              className="w-full object-cover rounded-md transition-transform duration-500 hover:scale-[1.03]"
               alt=""
+              width={800}
+              height={1000}
+              className="w-full object-cover rounded-md transition-transform duration-500 hover:scale-[1.03]"
             />
           </motion.div>
         ))}
