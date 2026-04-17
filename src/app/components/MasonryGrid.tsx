@@ -51,7 +51,7 @@ const item: Variants = {
   },
 };
 
-const MasonryGrid = () => {
+const MasonryGrid = ({ onSelect }: { onSelect: (src: string) => void}) => {
   return (
     <>
       <div>
@@ -70,17 +70,26 @@ const MasonryGrid = () => {
       >
         {images.map((src, index) => (
           <motion.div
-            key={index}
+            key={src}
             variants={item}
-            className="mb-4 break-inside-avoid"
+            className="mb-4 break-inside-avoid cursor-pointer"
+            onClick={() => onSelect(src)}
+            transition={{
+              type: "spring",
+              stiffness: 260,
+              damping: 40,
+            }}
+          
           >
+            
             <Image
               src={src}
               alt=""
               width={800}
               height={1000}
-              className="w-full object-cover rounded-md transition-transform duration-500 hover:scale-[1.03]"
+              className="w-full rounded-md "
             />
+            
           </motion.div>
         ))}
       </motion.div>
