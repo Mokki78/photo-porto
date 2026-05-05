@@ -22,8 +22,12 @@ export default function ImageModal({ src, isOpen, onClose }: { src: string; isOp
             <Image 
             src={src}
             alt="Modal Image"
-            width={1200}
-            height={800}
+            width={900}
+            height={400}
+            style={{
+              objectFit: 'cover',
+              objectPosition: 'top',
+            }}
             className="rounded-lg object-contain"
             />
             </motion.div>

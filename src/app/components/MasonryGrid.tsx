@@ -11,7 +11,6 @@ const images = [
   `/long_14.jpg`,
   `/square_9.jpg`,
   `/long_16.jpg`,
-  `/square_5.jpg`,
   `/long_9.jpg`,
   `/wide_6.jpg`,
   `/long_10.jpg`,
@@ -23,6 +22,8 @@ const images = [
   `/square_7.jpg`,
   `/wide_3.jpg`,
   `/long_11.jpg`,
+  `/square_16.jpg`,
+  `/square_18.jpg`,
 ];
 
 const container: Variants = {

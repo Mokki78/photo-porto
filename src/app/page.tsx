@@ -5,6 +5,7 @@ import Portfolio from "./components/Portfolio";
 import About from "./components/About";
 import AnimatedHamburger from "./components/AnimatedHamburger";
 
+
 export default function Home() {
   return (
     <>
@@ -18,7 +19,7 @@ export default function Home() {
       </section>
       <section id="About">
         <About />
-      </section>
+       </section>
       <Footer />
     </>
   );
