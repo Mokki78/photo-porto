@@ -34,8 +34,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
 section {
   padding-top: 100px;
   scroll-margin-top: 80px;
@@ -63,7 +61,6 @@ section {
 
 .porto-text {
   color: white;
-
   padding: 20px;
 }
 
@@ -74,38 +71,35 @@ section {
   font-size: 50px;
 }
 
-.section-text {
-  color: white;
-  font-weight: 100;
-  font-size: 100px;
-  width: 200px;
-  margin: 0 auto;
-  padding-bottom: 50px;
-}
-
-.about-section {
-  background-color: darkgrey;
-  color: lightgrey;
-}
-
-.footer-section {
-  background-color: #171717;
-  max-height: 400px;
-  display: flex;
-  flex-direction: row;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.footer-text {
-  color: #171717;
-  margin-top: 20px;
-}
-
 .copyright {
   color: white;
 }
 
 .some-container {
   width: 100px;
+}
+
+.formText {
+  background: white;
+  color: black;
+  font-family: var(--font-sans), sans serif;
+}
+
+.formHeader {
+  background: white;
+  color: black;
+  font-family: var(--font-script), cursive;
+  font-size: 30px;
+}
+
+.cross {
+  color: black;
+  font-size: 25px;
+  font-family: var(--font-sans), sans serif;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.cross:hover {
+  color: orange;
 }

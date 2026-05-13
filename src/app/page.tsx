@@ -3,13 +3,13 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Portfolio from "./components/Portfolio";
 import About from "./components/About";
-import AnimatedHamburger from "./components/AnimatedHamburger";
+import Header from "./components/Header";
 
 
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <Header />
   
       <section id="Home">
         <Hero />

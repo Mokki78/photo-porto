@@ -30,8 +30,7 @@ const container: Variants = {
   hidden: {},
   show: {
     transition: {
-      
-      duration: 0.35
+      duration: 0.35,
     },
   },
 };
@@ -52,7 +51,7 @@ const item: Variants = {
   },
 };
 
-const MasonryGrid = ({ onSelect }: { onSelect: (src: string) => void}) => {
+const MasonryGrid = ({ onSelect }: { onSelect: (src: string) => void }) => {
   return (
     <>
       <div>
@@ -80,9 +79,7 @@ const MasonryGrid = ({ onSelect }: { onSelect: (src: string) => void}) => {
               stiffness: 260,
               damping: 40,
             }}
-          
           >
-            
             <Image
               src={src}
               alt=""
@@ -90,7 +87,6 @@ const MasonryGrid = ({ onSelect }: { onSelect: (src: string) => void}) => {
               height={1000}
               className="w-full rounded-md "
             />
-            
           </motion.div>
         ))}
       </motion.div>
